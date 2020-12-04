@@ -6,6 +6,20 @@ import pythonLogo from '../static/technologies/python-logo.png';
 import nodeJsLogo from '../static/technologies/nodejs-logo.png';
 import javaLogo from '../static/technologies/java-logo.png';
 import djangoLogo from '../static/technologies/django-logo.png';
+import cLogo from '../static/technologies/c-logo.png';
+import cppLogo from '../static/technologies/cpp-logo.png';
+import reactjsLogo from '../static/technologies/react-logo.png';
+import htmlLogo from '../static/technologies/html-logo.png';
+import cssLogo from '../static/technologies/css-logo.png';
+import javascriptLogo from '../static/technologies/javascript-logo.png';
+import androidstudioLogo from '../static/technologies/androidstudio-logo.png';
+import mongodbLogo from '../static/technologies/mongodb-logo.jpg';
+import mysqlLogo from '../static/technologies/mysql-logo.png';
+import phpMyAdminLogo from '../static/technologies/phpmyadmin-logo.png';
+import postgresqlLogo from '../static/technologies/postgresql-logo.png';
+import kerasLogo from '../static/technologies/keras-logo.png';
+import tensorflowLogo from '../static/technologies/tensorflow-logo.png';
+import pytorchLogo from '../static/technologies/pytorch-logo.png';
 import phpLogo from '../static/technologies/php-logo.png';
 import SkillCard from './SkillCard';
 import SkillCategory from './SkillCategory';
@@ -23,42 +37,43 @@ class Skills extends React.Component {
                         { name: 'NodeJS', link: nodeJsLogo },
                         { name: 'Java', link: javaLogo },
                         { name: 'Django', link: djangoLogo },
-                        { name: 'PHP', link: phpLogo },
                     ]
                 },
                 {
                     category: 'Desktop',
                     technologies: [
                         { name: 'Python', link: pythonLogo },
-                        { name: 'C', link: '' },
-                        { name: 'C++', link: '' },
-                        { name: 'Java', link: '' },
+                        { name: 'C', link: cLogo },
+                        { name: 'C++', link: cppLogo },
+                        { name: 'Java', link: javaLogo },
                     ]
                 },
                 {
                     category: 'Frontend',
                     technologies: [
-                        { name: 'ReactJs', link: '' },
-                        { name: 'React Native', link: '' },
-                        { name: 'HTML/CSS/Javascript', link: '' },
-                        { name: 'Android Studio', link: '' }
+                        { name: 'ReactJs', link: reactjsLogo },
+                        { name: 'React Native', link: reactjsLogo },
+                        { name: 'HTML', link: htmlLogo },
+                        { name: 'CSS', link: cssLogo },
+                        { name: 'Javascript', link: javascriptLogo },
+                        { name: 'Android Studio', link: androidstudioLogo }
                     ]
                 },
                 {
                     category: 'Database',
                     technologies: [
-                        { name: 'MongoDB', link: '' },
-                        { name: 'SQL/MySQL', link: '' },
-                        { name: 'PHPMyAdmin', link: '' },
-                        { name: 'PostgreSQL', link: '' }
+                        { name: 'MongoDB', link: mongodbLogo },
+                        { name: 'SQL/MySQL', link: mysqlLogo },
+                        { name: 'PHPMyAdmin', link: phpMyAdminLogo },
+                        { name: 'PostgreSQL', link: postgresqlLogo }
                     ]
                 },
                 {
                     category: 'Artificial Intelligence',
                     technologies: [
-                        { name: 'Keras', link: '' },
-                        { name: 'TensorFlow', link: '' },
-                        { name: 'PyTorch', link: '' }
+                        { name: 'Keras', link: kerasLogo },
+                        { name: 'TensorFlow', link: tensorflowLogo },
+                        { name: 'PyTorch', link: pytorchLogo }
                     ]
                 }
             ]
@@ -69,22 +84,15 @@ class Skills extends React.Component {
         return (
             <div >
                 <HeroCured title={'Skills'} subTitle={"I have proficiency in the following skills"} titleSize={'display-4'} />
-                {
-                    // this.state.items.forEach(item => {
-                    //     console.log(item);
-                    //     return (
-                    //         <SkillCategory item={item} />
-                    //     )
-                    // })
-                    this.state.items.map((item) => {
-                        return(
-                            <SkillCategory item={item} />
-                        )
-                    })
-                }
-                {/* <SkillCategory items={this.state.items} />
-                <SkillCategory items={this.state.items} /> */}
-                {/* { item.selected && <CardInfo title={item.title} subTitle={item.subTitle} link={item.link} />} */}
+                <Container className="mb-2">
+                    {
+                        this.state.items.map((item) => {
+                            return (
+                                <SkillCategory item={item} />
+                            )
+                        })
+                    }
+                </Container>
             </div>
         );
     }
