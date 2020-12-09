@@ -3,23 +3,25 @@ import { Card, Col, Container, Row, Image } from 'react-bootstrap';
 import SkillCard from './SkillCard';
 
 
-function SkillCategory({item}) {
+function SkillCategory({ item }) {
     console.log(item);
-    return(
+    return (
         <Row>
             <Col>
                 <h4>{item.category}</h4>
-                <Container fluid>
-                    <Row>
-                        {
-                            item.technologies.map(skill => {
-                                return(
-                                    <SkillCard skill={skill} />
-                                );
-                            })
-                        }
-                    </Row>
-                </Container>
+                <Card>
+                <Container className="m-2" fluid>
+                        <Row>
+                            {
+                                item.technologies.map(skill => {
+                                    return (
+                                        <SkillCard skill={skill} />
+                                    );
+                                })
+                            }
+                        </Row>
+                    </Container>
+                </Card>
             </Col>
         </Row>
     );

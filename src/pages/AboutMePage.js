@@ -18,10 +18,10 @@ function AboutMePage({ id, data }) {
             <Row>
                 <Col>
                     <div className="mt-5">
-                        <Card fluid>
+                        <Card fluid style={{border: 'none'}}>
                             <Row>
-                                <Col className="pr-0" md={6}>
-                                    <Card>
+                                <Col className="mt-3" md={6}>
+                                    <Card style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',}}>
                                         <Card.Body>
                                             <Row>
                                                 <Col className="d-flex align-items-center justify-content-center p-0">
@@ -43,8 +43,8 @@ function AboutMePage({ id, data }) {
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                <Col className="pl-0" md={6}>
-                                    <Card style={{ height: '100%' }}>
+                                <Col className="mt-3" md={6}>
+                                    <Card  style={{ height: '100%', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', }}>
                                         <Card.Body style={{ padding: '2em', textAlign: 'center', verticalAlign: 'middle' }}>
                                             <h4>About Me</h4>
                                             <Content>
@@ -56,9 +56,9 @@ function AboutMePage({ id, data }) {
                                     </Card>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="mt-3" >
                                 <Col>
-                                    <Card>
+                                    <Card style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', }}>
                                         <Skills />
                                     </Card>
                                 </Col>

@@ -20,6 +20,9 @@ import postgresqlLogo from '../static/technologies/postgresql-logo.png';
 import kerasLogo from '../static/technologies/keras-logo.png';
 import tensorflowLogo from '../static/technologies/tensorflow-logo.png';
 import pytorchLogo from '../static/technologies/pytorch-logo.png';
+import adobexdLogo from '../static/technologies/adobxd-logo.png';
+import photoshopLogo from '../static/technologies/photoshop-logo.png';
+import lunacyLogo from '../static/technologies/lunacy-logo.png';
 import phpLogo from '../static/technologies/php-logo.png';
 import SkillCard from './SkillCard';
 import SkillCategory from './SkillCategory';
@@ -75,14 +78,22 @@ class Skills extends React.Component {
                         { name: 'TensorFlow', link: tensorflowLogo },
                         { name: 'PyTorch', link: pytorchLogo }
                     ]
-                }
+                },
+                {
+                    category: 'Design',
+                    technologies: [
+                        { name: 'Adobe XD', link: adobexdLogo },
+                        { name: 'Photoshop', link: photoshopLogo },
+                        { name: 'Lunacy', link: lunacyLogo }
+                    ]
+                },
             ]
         }
     }
 
     render() {
         return (
-            <div >
+            <div>
                 <HeroCured title={'Skills'} subTitle={"I have proficiency in the following skills"} titleSize={'display-4'} />
                 <Container className="mb-2">
                     {
