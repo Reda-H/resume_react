@@ -39,7 +39,7 @@ function AboutMePage({ id, data }) {
                                                     <p><span className="font-weight-bold">Phone: </span>{phone}</p>
                                                     <Row className="mb-1">
                                                         <Col md={{ span: 6, offset: 2 }}>
-                                                            <Button variant="outline-dark" href={`http://18.222.138.3:8080/files/herradireda_resume_eng.pdf`}>Get Resume <IoDownload className="mb-1" size={'1.5em'} /></Button>
+                                                            <Button variant="outline-dark" href={`./herradireda_resume_eng.pdf`}>Get Resume <IoDownload className="mb-1" size={'1.5em'} /></Button>
                                                         </Col>
                                                     </Row>
                                                 </Col>
