@@ -3,6 +3,7 @@ import { Card, Col, Container, Row, Image, Button } from 'react-bootstrap';
 import { IoDownload } from 'react-icons/io5';
 import Content from '../components/Content';
 import HeroCured from '../components/HeroCured';
+import DownloadLink from "react-download-link";
 
 import Skills from '../components/Skills';
 import profile from '../static/profile.jpg';
@@ -22,7 +23,7 @@ function AboutMePage({ id, data }) {
                 <Col>
                     <div className="mt-5">
                         <Card fluid style={{border: 'none'}}>
-                            <Row>
+                            <Row style={{ display: 'flex', alignItems: 'center'}}>
                                 <Col className="mt-3" md={6}>
                                     <Card style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',}}>
                                         <Card.Body>
@@ -38,7 +39,7 @@ function AboutMePage({ id, data }) {
                                                     <p><span className="font-weight-bold">Phone: </span>{phone}</p>
                                                     <Row className="mb-1">
                                                         <Col md={{ span: 6, offset: 2 }}>
-                                                            <Button variant="outline-dark">Get Resume <IoDownload className="mb-1" size={'1.5em'} /></Button>
+                                                            <Button variant="outline-dark" href={`http://18.222.138.3:8080/files/herradireda_resume_eng.pdf`}>Get Resume <IoDownload className="mb-1" size={'1.5em'} /></Button>
                                                         </Col>
                                                     </Row>
                                                 </Col>
@@ -50,9 +51,9 @@ function AboutMePage({ id, data }) {
                                     <Card  style={{ height: '100%', boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px', }}>
                                         <Card.Body style={{ padding: '2em', textAlign: 'center', verticalAlign: 'middle' }}>
                                             <Content>
-                                                <p>I'm a Computer Science graduate from the university of Al Akhawayn in Ifrane, I have experience in Full Stack Web Developement, Software Engineering, Data Science</p>
-                                                <p>Currently, I'm currently working on personal projects and looking for a project to pour my passion into !</p>
-                                                <p>To contact me, send me a mail through Here !</p>
+                                                <p>My name is Reda Herradi and I'm a computer science engineer. I graduated from Al Akhawayn University in Ifrane with a Bachelor's in Computer Science and Engineering in 2020. I have experience in Full Stack Development, User Experience Design. However, I am seeking to expand my skills in Data Science.</p>
+                                                <p>My most recent accomplishment has been my work with Cosmic, a startup which is developing a networking app. I have taken charge of the full development process on my own and have set a base for future coding engineers to develop on.</p>
+                                                <p>I am actively searching for new challenges, and welcome any contact regarding new opportunities.</p>
                                             </Content>
                                         </Card.Body>
                                     </Card>

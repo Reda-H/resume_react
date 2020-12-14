@@ -6,7 +6,7 @@ import reacLogo from '../static/technologies/reac-logo.png';
 import paylogicLogo from '../static/technologies/paylogic-logo.png';
 import unireverLogo from '../static/technologies/unirever-logo.png';
 import cosmicLogo from '../static/technologies/cosmic-logo.png';
-import { Col, Row, Image } from 'react-bootstrap';
+import { Col, Row, Image, Container } from 'react-bootstrap';
 
 const items = [
     {
@@ -78,17 +78,16 @@ function WorkExperience() {
                 {items.map((item) => {
                     return (
                         <div className="experience-card">
-                            <Row>
-                                <Col style={{maxWidth: '210px'}}>
-                                    <Image style={{maxWidth: '200px'}} src={item.media.source.url} />
+                            <Row style={{display: 'flex', alignItems: 'center'}}>
+                                <Col style={{ maxWidth: '210px', display: 'inline-block', height: '100%', verticalAlign: 'middle' }}>
+                                    <Image style={{ maxWidth: '100%' }} src={item.media.source.url} />
                                 </Col>
-                                <Col>
+                                <Col style={{ verticalAlign: 'middle' }}>
                                     <h5>{item.cardTitle}</h5>
                                     <p className="text-muted lead font-italic">{item.title}</p>
-                                    <p className="m-1" style={{fontSize: '14px'}}>{item.cardDetailedText}</p>
+                                    <p className="m-1" style={{ fontSize: '14px' }}>{item.cardDetailedText}</p>
                                 </Col>
                             </Row>
-
                         </div>
                     );
                 })}

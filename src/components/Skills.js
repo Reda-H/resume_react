@@ -57,7 +57,7 @@ class Skills extends React.Component {
                         { name: 'HTML', link: htmlLogo, grade: 'A', sign: '+' },
                         { name: 'CSS', link: cssLogo, grade: 'A', sign: '+' },
                         { name: 'Javascript', link: javascriptLogo, grade: 'A', sign: '+' },
-                        { name: 'Android Studio', link: androidstudioLogo, grade: 'B', sign: '+' }
+                        { name: 'Android Studio', link: androidstudioLogo, grade: 'C', sign: '+' }
                     ]
                 },
                 {

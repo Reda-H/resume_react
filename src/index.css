@@ -37,6 +37,7 @@ body {
 }
 
 .nav-item > .active {
+    transition: 0.4s;
     border-bottom: 1px solid #333;
 }
 
@@ -69,7 +70,7 @@ body {
     top:5px;
     text-align: center;
     justify-content: center;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px 0px 15px 15px;
     color:white;
     padding:0em .2em;
     font-size:1.2em;
@@ -88,27 +89,27 @@ body {
 }
 
 .a-badge.plus-badge {
-    background:#2CE574;
+    background:#23ab57;
 }
 
 .a-badge.minus-badge {
-    background:#8fe52c;
+    background:#6db31d;
 }
 
 .b-badge.plus-badge {
-    background:#CDF03A;
+    background:#afce31;
 }
 
 .b-badge.minus-badge {
-    background:#f0bf3a;
+    background:#caa337;
 }
 
 .c-badge.plus-badge {
-    background:#ff9100;
+    background:#ff7300;
 }
 
 .c-badge.minus-badge {
-    background:#ff7300;
+    background:#ff4800;
 }
 
 .row-skillcategory {
