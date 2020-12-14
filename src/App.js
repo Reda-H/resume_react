@@ -60,10 +60,10 @@ class App extends React.Component {
                   <Link activeClass="active" className="nav-link" to="home-page" spy smooth offset={-70}>Home</Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Link activeClass="active" className="nav-link" to="about-me-page" spy smooth offset={-70}>About Me</Link>
+                  <Link activeClass="active" className="nav-link" to="about-me-page" spy smooth offset={-55}>About</Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Link activeClass="active" className="nav-link" to="projects-page" spy smooth offset={-70}>Projects</Link>
+                  <Link activeClass="active" className="nav-link" to="projects-page" spy smooth offset={-70}>Experience</Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Link activeClass="active" className="nav-link" to="contact-page" spy smooth offset={-70}>Contact</Link>

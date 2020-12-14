@@ -1,11 +1,10 @@
 import React from 'react';
 import { Col, Container, Jumbotron, Row } from 'react-bootstrap';
-import bgImage from '../static/background_portfolio.png';
 
-function HeroCured({ title, titleSize, subTitle, subText }) {
+function HeroCured({ title, titleSize, subTitle, subText, marginNone }) {
 
     return (
-        <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+        <Jumbotron className={`${marginNone ? 'mb-0' : ''} bg-transparent jumbotron-fluid p-0`}>
             <Container fluid>
                 <Row className="justify-content-center">
                     <Col md={10} sm={12}>

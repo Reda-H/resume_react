@@ -42,7 +42,10 @@ class ContactPage extends React.Component {
                 console.log(result.text);
                 this.setState({
                     disabled: false,
-                    emailSent: true
+                    emailSent: true,
+                    name: '',
+                    email: '',
+                    message: '',
                 });
             })
             .catch(err => {
@@ -57,7 +60,7 @@ class ContactPage extends React.Component {
     render() {
         return (
             <Container>
-                <div id={this.props.id} style={{ margin: '2em' }}>
+                <div className="div-contact" id={this.props.id} style={{ margin: '2em' }}>
                     <HeroCured title={"Let's talk !"} />
                     <Content>
                         <Form onSubmit={this.handleSubmit}>

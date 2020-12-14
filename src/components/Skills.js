@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Container, Row, Image } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import HeroCured from './HeroCured';
 import pythonLogo from '../static/technologies/python-logo.png';
@@ -23,8 +23,6 @@ import pytorchLogo from '../static/technologies/pytorch-logo.png';
 import adobexdLogo from '../static/technologies/adobxd-logo.png';
 import photoshopLogo from '../static/technologies/photoshop-logo.png';
 import lunacyLogo from '../static/technologies/lunacy-logo.png';
-import phpLogo from '../static/technologies/php-logo.png';
-import SkillCard from './SkillCard';
 import SkillCategory from './SkillCategory';
 
 
@@ -37,54 +35,54 @@ class Skills extends React.Component {
                 {
                     category: 'Backend',
                     technologies: [
-                        { name: 'NodeJS', link: nodeJsLogo },
-                        { name: 'Java', link: javaLogo },
-                        { name: 'Django', link: djangoLogo },
+                        { name: 'NodeJS', link: nodeJsLogo, grade: 'A', sign: '+'},
+                        { name: 'Java', link: javaLogo, grade: 'B', sign: '-' },
+                        { name: 'Django', link: djangoLogo, grade: 'A', sign: '+' },
                     ]
                 },
                 {
                     category: 'Desktop',
                     technologies: [
-                        { name: 'Python', link: pythonLogo },
-                        { name: 'C', link: cLogo },
-                        { name: 'C++', link: cppLogo },
-                        { name: 'Java', link: javaLogo },
+                        { name: 'Python', link: pythonLogo, grade: 'A', sign: '+' },
+                        { name: 'C', link: cLogo, grade: 'A', sign: '+' },
+                        { name: 'C++', link: cppLogo, grade: 'A', sign: '+' },
+                        { name: 'Java', link: javaLogo, grade: 'B', sign: '-' },
                     ]
                 },
                 {
                     category: 'Frontend',
                     technologies: [
-                        { name: 'ReactJs', link: reactjsLogo },
-                        { name: 'React Native', link: reactjsLogo },
-                        { name: 'HTML', link: htmlLogo },
-                        { name: 'CSS', link: cssLogo },
-                        { name: 'Javascript', link: javascriptLogo },
-                        { name: 'Android Studio', link: androidstudioLogo }
+                        { name: 'ReactJs', link: reactjsLogo, grade: 'B', sign: '+' },
+                        { name: 'React Native', link: reactjsLogo, grade: 'A', sign: '-' },
+                        { name: 'HTML', link: htmlLogo, grade: 'A', sign: '+' },
+                        { name: 'CSS', link: cssLogo, grade: 'A', sign: '+' },
+                        { name: 'Javascript', link: javascriptLogo, grade: 'A', sign: '+' },
+                        { name: 'Android Studio', link: androidstudioLogo, grade: 'B', sign: '+' }
                     ]
                 },
                 {
                     category: 'Database',
                     technologies: [
-                        { name: 'MongoDB', link: mongodbLogo },
-                        { name: 'SQL/MySQL', link: mysqlLogo },
-                        { name: 'PHPMyAdmin', link: phpMyAdminLogo },
-                        { name: 'PostgreSQL', link: postgresqlLogo }
+                        { name: 'MongoDB', link: mongodbLogo, grade: 'B', sign: '+' },
+                        { name: 'SQL/MySQL', link: mysqlLogo, grade: 'B', sign: '+' },
+                        { name: 'phpMyAdmin', link: phpMyAdminLogo, grade: 'C', sign: '+' },
+                        { name: 'PostgreSQL', link: postgresqlLogo, grade: 'A', sign: '-' }
                     ]
                 },
                 {
                     category: 'Artificial Intelligence',
                     technologies: [
-                        { name: 'Keras', link: kerasLogo },
-                        { name: 'TensorFlow', link: tensorflowLogo },
-                        { name: 'PyTorch', link: pytorchLogo }
+                        { name: 'Keras', link: kerasLogo, grade: 'B', sign: '+' },
+                        { name: 'TensorFlow', link: tensorflowLogo, grade: 'B', sign: '+' },
+                        { name: 'PyTorch', link: pytorchLogo, grade: 'C', sign: '+' }
                     ]
                 },
                 {
                     category: 'Design',
                     technologies: [
-                        { name: 'Adobe XD', link: adobexdLogo },
-                        { name: 'Photoshop', link: photoshopLogo },
-                        { name: 'Lunacy', link: lunacyLogo }
+                        { name: 'Adobe XD', link: adobexdLogo, grade: 'B', sign: '+' },
+                        { name: 'Photoshop', link: photoshopLogo, grade: 'A', sign: '+' },
+                        { name: 'Lunacy', link: lunacyLogo, grade: 'B', sign: '+' }
                     ]
                 },
             ]
@@ -95,7 +93,7 @@ class Skills extends React.Component {
         return (
             <div>
                 <HeroCured title={'Skills'} subTitle={"I have proficiency in the following skills"} titleSize={'display-4'} />
-                <Container className="mb-2">
+                <Container className="mb-2 container-skill" >
                     {
                         this.state.items.map((item) => {
                             return (
