@@ -54,6 +54,7 @@ body {
 
 .div-contact {
   font-family: 'Adobe Garamond', serif;
+  min-height: 80vh;
 }
 
 .container-skill {

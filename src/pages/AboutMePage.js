@@ -3,10 +3,10 @@ import { Card, Col, Container, Row, Image, Button } from 'react-bootstrap';
 import { IoDownload } from 'react-icons/io5';
 import Content from '../components/Content';
 import HeroCured from '../components/HeroCured';
-import DownloadLink from "react-download-link";
 
 import Skills from '../components/Skills';
 import profile from '../static/profile.jpg';
+import profile2 from '../static/profile-3-cropped.png';
 
 function AboutMePage({ id, data }) {
     const name = 'Herradi Reda';
@@ -28,8 +28,8 @@ function AboutMePage({ id, data }) {
                                     <Card style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',}}>
                                         <Card.Body>
                                             <Row>
-                                                <Col className="d-flex align-items-center justify-content-center p-0">
-                                                    <Image style={{ maxHeight: '90%', maxWidth: '90%' }} variant="top" src={profile} rounded />
+                                                <Col className="d-flex align-items-center justify-content-center p-0" style={{maxHeight: '290px'}}>
+                                                    <Image style={{ maxHeight: '90%', maxWidth: '90%' }} variant="top" src={profile2} rounded />
                                                 </Col>
                                                 <Col className="mt-2 p-0">
                                                     <p><span className="font-weight-bold">Name: </span>{name}</p>
