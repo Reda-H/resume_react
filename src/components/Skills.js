@@ -93,6 +93,7 @@ class Skills extends React.Component {
         return (
             <div>
                 <HeroCured title={'Skills'} subTitle={"I have proficiency in the following skills"} titleSize={'display-4'} />
+                {/* <HeroCured title={'Skills'} subTitle={"I have proficiency in the following skills"} titleSize={'display-4'} /> */}
                 <Container className="mb-2 container-skill" >
                     {
                         this.state.items.map((item) => {

@@ -74,7 +74,7 @@ function WorkExperience() {
     console.log(items);
     return (
         <div>
-            <Chrono mode="VERTICAL_ALTERNATING">
+            <Chrono theme={{ cardBgColor: '#FFCB9A'}} mode="VERTICAL_ALTERNATING">
                 {items.map((item) => {
                     return (
                         <div className="experience-card">
@@ -83,9 +83,9 @@ function WorkExperience() {
                                     <Image style={{ maxWidth: '100%' }} src={item.media.source.url} />
                                 </Col>
                                 <Col style={{ verticalAlign: 'middle' }}>
-                                    <h5>{item.cardTitle}</h5>
-                                    <p className="text-muted lead font-italic">{item.title}</p>
-                                    <p className="m-1" style={{ fontSize: '14px' }}>{item.cardDetailedText}</p>
+                                    <h5 className="first-color">{item.cardTitle}</h5>
+                                    <p className="second-color lead font-italic">{item.title}</p>
+                                    <p className="m-1 first-color" style={{ fontSize: '14px' }}>{item.cardDetailedText}</p>
                                 </Col>
                             </Row>
                         </div>

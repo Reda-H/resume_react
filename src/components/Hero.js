@@ -11,7 +11,7 @@ function Hero({ data }) {
                     <Row className="justify-content-center text-light">
                         <Col md={'auto'} sm={12}>
                             {data.title && <h4 className="h4-my-name m-0 mt-5">Hello, my name is</h4>}
-                            {data.title && <h2 className="hero-title display-1 font-weight-bolder">{data.title + ','}</h2>}
+                            {data.title && <h2 className="hero-title display-1 font-weight-bolder second-color">{data.title + ','}</h2>}
                             {data.subTitle && <h3 className="display-5 font-weight-light">
                                 <Typewriter
                                     options={{

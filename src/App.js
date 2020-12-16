@@ -51,22 +51,22 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid>
-          <Navbar sticky="top" className="justify-content-center" bg="light" expand="lg">
+        <Container className="app-container p-0" fluid>
+          <Navbar sticky="top" className="justify-content-center" bg="transparent" expand="lg">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-center">
               <Nav className="justify-content-center" activeKey="/home">
                 <Nav.Item>
-                  <Link activeClass="active" className="nav-link" to="home-page" spy smooth offset={-70}>Home</Link>
+                  <Link activeClass="active" className="nav-link" to="home-page" spy smooth offset={-70}><span className="second-color">HOME</span></Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Link activeClass="active" className="nav-link" to="about-me-page" spy smooth offset={-55}>About</Link>
+                  <Link activeClass="active" className="nav-link" to="about-me-page" spy smooth offset={-50}><span className="second-color">ABOUT</span></Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Link activeClass="active" className="nav-link" to="projects-page" spy smooth offset={-70}>Experience</Link>
+                  <Link activeClass="active" className="nav-link" to="projects-page" spy smooth offset={-45}><span className="second-color">EXPERIENCE</span></Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Link activeClass="active" className="nav-link" to="contact-page" spy smooth offset={-70}>Contact</Link>
+                  <Link activeClass="active" className="nav-link" to="contact-page" spy smooth offset={-30}><span className="second-color">CONTACT</span></Link>
                 </Nav.Item>
               </Nav>
             </Navbar.Collapse>

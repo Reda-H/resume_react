@@ -8,8 +8,8 @@ function HeroCured({ title, titleSize, subTitle, subText, marginNone }) {
             <Container fluid>
                 <Row className="justify-content-center">
                     <Col md={10} sm={12}>
-                        {title && <h2 className={`${titleSize ? titleSize : 'display-1'} font-weight-bolder`}>{title}</h2>}
-                        {subTitle && <h3 className="font-weight-light">{subTitle}</h3>}
+                        {title && <h2 className={`${titleSize ? titleSize : 'display-1'} font-weight-bolder second-color`}>{title}</h2>}
+                        {subTitle && <h3 className="third-color">{subTitle}</h3>}
                         {subText && <h4 className="lead font-weight-light">{subText}</h4>}
                     </Col>
                 </Row>

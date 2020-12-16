@@ -8,7 +8,7 @@ function SkillCategory({ item }) {
     return (
         <Row className="row-skillcategory">
             <Col>
-                <h4 className="border-bottom">{item.category}</h4>
+                <h4 className="third-color border-bottom-colored">{item.category}</h4>
                 <Container className="m-2" fluid>
                     <Row>
                         {
