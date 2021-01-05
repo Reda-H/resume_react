@@ -100,7 +100,7 @@ body {
 
 .div-contact {
   font-family: 'Roboto', serif;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 /* .container-skill {
@@ -110,10 +110,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
-
-.container-skill {
-
-}
 
 .notify-badge{
     position: absolute;
@@ -251,4 +247,8 @@ body {
 .error-msg {
   color: #EE6352;
   padding: 10px 15px;
+}
+
+.card-columns {
+  column-count: 3;
 }

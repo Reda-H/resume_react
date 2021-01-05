@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import HeroCured from './HeroCured';
 import pythonLogo from '../static/technologies/python-logo.png';
@@ -31,11 +31,11 @@ class Skills extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [
+            items1: [
                 {
                     category: 'Backend',
                     technologies: [
-                        { name: 'NodeJS', link: nodeJsLogo, grade: 'A', sign: '+'},
+                        { name: 'NodeJS', link: nodeJsLogo, grade: 'A', sign: '+' },
                         { name: 'Java', link: javaLogo, grade: 'B', sign: '-' },
                         { name: 'Django', link: djangoLogo, grade: 'A', sign: '+' },
                     ]
@@ -60,6 +60,8 @@ class Skills extends React.Component {
                         { name: 'Android Studio', link: androidstudioLogo, grade: 'C', sign: '+' }
                     ]
                 },
+            ],
+            items2: [
                 {
                     category: 'Database',
                     technologies: [
@@ -95,13 +97,26 @@ class Skills extends React.Component {
                 <HeroCured title={'Skills'} subTitle={"I have proficiency in the following skills"} titleSize={'display-4'} />
                 {/* <HeroCured title={'Skills'} subTitle={"I have proficiency in the following skills"} titleSize={'display-4'} /> */}
                 <Container className="mb-2 container-skill" >
-                    {
-                        this.state.items.map((item) => {
-                            return (
-                                <SkillCategory item={item} />
-                            )
-                        })
-                    }
+                    <Row>
+                        <Col>
+                            {
+                                this.state.items1.map((item) => {
+                                    return (
+                                        <SkillCategory item={item} />
+                                    )
+                                })
+                            }
+                        </Col>
+                        <Col>
+                            {
+                                this.state.items2.map((item) => {
+                                    return (
+                                        <SkillCategory item={item} />
+                                    )
+                                })
+                            }
+                        </Col>
+                    </Row>
                 </Container>
             </div>
         );

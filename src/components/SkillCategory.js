@@ -4,10 +4,9 @@ import SkillCard from './SkillCard';
 
 
 function SkillCategory({ item }) {
-    console.log(item);
     return (
         <Row className="row-skillcategory">
-            <Col>
+            <Col md={12}>
                 <h4 className="third-color border-bottom-colored">{item.category}</h4>
                 <Container className="m-2" fluid>
                     <Row>
